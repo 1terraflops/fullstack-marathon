@@ -1,10 +1,12 @@
 # Fullstack Marathon
-3-month long coding challenge
+3-month-long coding challenge
 
 ## 💡 About Fullstack Marathon
 Fullstack Marathon is a coding challenge which goal was to teach students frontend and backend web development in 3 months. Starting with HTML, CSS and JavaScript, and ending with a card game project, which is available in my profile. 
 
 Students had up to a week to complete each sprint. After finishing each sprint, they had to check their work with peers, as a result of peer-to-peer learning framework.
+
+During the 3-month-long period, I've also completed a Race with a teammate. Together, we developed our first project - a calculator.
 
 ## 🔧 Built with
 * **JavaScript**
