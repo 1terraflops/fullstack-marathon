@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+}
+
+.boxes {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    rotate: 45deg;
+    cursor: move;
+}
+
+.box-1 { background-color: #cfb657; left: -250px; top: -50px; }
+.box-2 { background-color: #71cf57; left: -150px; top: -50px; }
+.box-3 { background-color: #9f57cf; left: -50px; top: -50px; }
+.box-4 { background-color: #578fcf; left: 50px; top: -50px; }
+.box-5 { background-color: #d64355; left: 150px; top: -50px; }
+.box-6 { background-color: #ba5662; left: 250px; top: -50px; }
+
+
+.disabled {
+    outline: dashed;
+}

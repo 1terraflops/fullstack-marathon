@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #3c464f;
+}
+
+label {
+    color: #cdcdcd;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+select {
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    padding: 10px;
+    width: 80%;
+    background: #303942;
+    color: #cdcdcd;
+}
+
+img {
+    width: 44px;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding-left: 18px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.settings-window {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 850px;
+    height: 530px;
+    padding-right: 10px;
+    background-color: #3c464f;
+}
+
+.side-panel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #303942;
+    width: fit-content;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-right: 10px;
+}
+
+.settings {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 120px 120px 120px;
+    justify-items: stretch;
+    align-items: center;
+    width: 750px;
+    height: 480px;
+    top: 25px;
+    left: 10px;
+    background-color: #45505e;
+    border: 1px solid #717171;
+}
+
+.font-setting {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.theme-setting input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.theme-setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding-left: 15px;
+    padding-right: 90px;
+    margin-top: 80px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3c464f;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #39b19f;
+    border-radius: 30px;
+    transform: scale(1);
+    transition: all .2s;
+}
+
+#dark-theme:checked + .slider {
+    background-color: #2590e7;
+}
+
+#dark-theme:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.weight-setting {
+    margin-top: 50px;
+}
+
+.weight-setting input {
+    opacity: 0;
+}
+
+.weight-setting label {
+    padding-left: 30px;
+}
+
+.weight-setting [type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 45px;
+    font-family: "Times New Roman", sans-serif;
+    line-height: 20px;
+}
+
+.weight-setting [type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    outline: 2px solid #cdcdcd;
+    background-color: #303942;
+}
+
+.weight-setting [type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("assets/images/checkmark-png-25954.png");
+    background-size: contain;
+}
+
+.color-setting {
+    margin-top: 20px;
+}
+
+.color-setting input {
+    opacity: 0;
+}
+
+.color-setting label {
+    padding-left: 20px;
+}
+
+.color-setting [type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.color-setting [type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 100px;
+}
+
+.color-setting #blue + label::before {
+    background-color: #5292d1;
+}
+
+.color-setting #teal + label::before {
+    background-color: #39b19f;
+}
+
+.color-setting #pink + label::before {
+    background-color: deeppink;
+}
+
+.color-setting #yellow + label::before {
+    background-color: yellow;
+}
+
+.color-setting #orange + label::before {
+    background-color: darkorange;
+}
+
+.color-setting [type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("assets/images/white checkmark.png");
+    background-size: contain;
+}
+
+.size-setting {
+    margin-top: 50px;
+}
+
+.size-setting label {
+    margin-left: 35px;
+    position: relative;
+}
+
+.range {
+    position: relative;
+    appearance: none;
+    width: 60%;
+    margin-left: 35px;
+    height: 2px;
+    background: #393939;
+}
+
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background: #39b19f;
+}
+
+.range::-moz-range-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background: #39b19f;
+}
+
+.range::-webkit-slider-thumb:hover {
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb:hover {
+    cursor: pointer;
+}
+
+.range::after {
+    content: "A";
+    position: absolute;
+    color: white;
+    top: 20px;
+    font-size: 15px;
+}
+
+.size-setting label::after {
+    content: "A";
+    position: absolute;
+    color: white;
+    top: 85px;
+    left: 220px;
+    font-size: 25px;
+}

@@ -1,0 +1,489 @@
+/* General styles */
+body {
+    margin: 0;
+    background: #fafafa;
+}
+
+img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navigation bar styles */
+.h-feed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #000000;
+}
+
+.navbar-buttons {
+    color: #fff9f7;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.tel {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff9f7;
+    margin-right: 20px;
+}
+
+.h-feed h2 {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff9f7;
+    margin: 0 0 0 20px;
+}
+
+.navbar-buttons p:hover,
+.h-feed h2{
+    cursor: pointer;
+}
+
+.navbar-buttons input:focus {
+    color: #fff9f7;
+}
+
+.navbar-buttons input {
+    background-color: transparent;
+    font-size: 15px;
+    padding: 0;
+    height: 40%;
+    border: none;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    outline: none;
+}
+
+.navbar-buttons input::placeholder {
+    color: #fff9f7;
+}
+
+/* Breadcrumbs styles */
+.h-breadcrumb {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #afafaf;
+}
+
+.h-breadcrumb h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    word-spacing: 5px;
+    margin: 8px 20px;
+}
+
+.h-breadcrumb h3:hover {
+    cursor: pointer;
+}
+
+.home-outline {
+    color: #975353;
+    font-weight: bold;
+}
+
+/* Catalog page */
+.h-products {
+    margin: 10px 45px 0 45px;
+}
+
+.h-products h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Catalog filters (checkboxes) */
+.filters-checkboxes {
+    margin-top: 10px;
+}
+
+.filters-checkboxes input {
+    opacity: 0;
+}
+
+.filters-checkboxes [type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 90px;
+    line-height: 20px;
+}
+
+.filters-checkboxes [type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: -15px;
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #424242;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-right: 5px;
+    padding-top: 7px;
+    transition: background-color 0.3s;
+}
+
+.filters-checkboxes [type="checkbox"]:hover + label::before {
+    background-color: #303030;
+}
+
+.filters-checkboxes [type="checkbox"]:checked + label::before {
+    background-color: black;
+}
+
+.filters-checkboxes [type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 55px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("assets/images/white checkmark.png");
+    background-size: contain;
+}
+
+#weapon + label::before {
+    content: "Casual";
+}
+
+#alien + label::before {
+    content: "Formal";
+}
+
+#green + label::before {
+    content: "Sports";
+}
+
+#alien:checked + label::after {
+    left: 54px;
+}
+
+#green:checked + label::after {
+    left: 53px;
+}
+
+/* Main area styles */
+/* Lethality checkbox filters */
+.catalog {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    column-gap: 25px;
+    width: 100%;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 200px;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 0.85em;
+    row-gap: 20px;
+}
+
+.checkboxes input {
+    opacity: 0;
+}
+
+.checkboxes [type=checkbox] + label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 25px;
+    line-height: 30px;
+}
+
+.checkboxes [type=checkbox] + label::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: #e4e1e1;
+    border: 3px solid black;
+    transition: background-color 0.2s;
+}
+
+.checkboxes [type=checkbox]:hover + label::before {
+    background-color: #c6c6c6;
+}
+
+.checkboxes [type=checkbox]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border: 3px solid black;
+    background-image: url("assets/images/white checkmark.png");
+    background-size: contain;
+}
+
+.price-range input {
+    position: relative;
+    appearance: none;
+    height: 2px;
+    background-color: #5b5b61;
+    width: 190px;
+}
+
+.price-range input::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #222121;
+    cursor: pointer;
+}
+
+.price-range input::-moz-range-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #222121;
+    border: none;
+    cursor: pointer;
+}
+
+.price-range input::after {
+    content: "0";
+    position: absolute;
+    top: 15px;
+    font-size: 16px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+.price-range input::before {
+    content: "250";
+    position: absolute;
+    top: 15px;
+    left: 85%;
+    font-size: 16px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+/* Products styles */
+.product {
+    display: flex;
+    gap: 25px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#formal-shoes {
+    height: 333px;
+}
+
+.product-heading {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.available {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.not-available {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #bc1616;
+}
+
+.buy {
+    width: 80px;
+    padding: 5px 15px 5px 15px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #292626;
+    color: white;
+    transition: background-color 0.1s;
+}
+
+.buy:hover {
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.no-buy {
+    width: 80px;
+    padding: 5px 15px 5px 15px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #b8b0b0;
+    color: white;
+}
+
+.h-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+}
+
+.h-card p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+/* Breakpoint */
+@media only screen and (max-width: 768px) {
+    .h-feed { display: none; }
+    .filters {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .product { width: 100%; }
+    .catalog {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .h-card { display: none; }
+}
+
+/* Product page */
+.product-page {
+    background-color: white;
+}
+
+.h-product {
+    margin-top: 30px;
+}
+
+.info-page {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.info-page img {
+    width: 30%;
+    margin-right: 50px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 2px;
+}
+
+.main-info {
+    display: flex;
+    justify-content: center;
+}
+
+#desc {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+}
+
+.reviews img {
+    width: 7%;
+}
+
+.review-info h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.review-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+.sub-desc {
+    font-weight: bold;
+}
+
+/* Adapt flexbox justifying for Firefox */
+@-moz-document url-prefix() {
+    .additional-info { justify-content: center; }
+}
+
+/* Breakpoint for product page */
+@media only screen and (max-width: 768px) {
+    .info-page { gap: 50px; }
+    .main-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .additional-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}

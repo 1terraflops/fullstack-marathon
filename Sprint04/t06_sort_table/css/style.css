@@ -1,0 +1,34 @@
+table {
+    width: fit-content;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 22px;
+}
+
+thead { background-color: #e40303; }
+tbody { background-color: lightgrey; }
+td { padding: 5px; }
+
+th {
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+}
+
+.message {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: #7c7c7c;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+#placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+#notification { text-align: center; }

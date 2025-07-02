@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+
+button {
+    height: 320px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #cfcfcf;
+    transition: background-color 0.15s;
+    color: white;
+}
+
+button:hover {
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+
+.triangle-button {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 30px solid #575a5a; /* triangle color */
+    display: inline-block;
+    cursor: pointer;
+    transition: border-right 0.15s;
+}

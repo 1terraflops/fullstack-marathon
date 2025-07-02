@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS sprint09;
+
+USE sprint09;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    login VARCHAR(20) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    fullname VARCHAR(100) NOT NULL,
+    email_address VARCHAR (30) NOT NULL UNIQUE,
+    status ENUM('admin', 'user') NOT NULL
+);

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charset</title>
+</head>
+<body>
+    <h1>Charset</h1>
+    <form>
+        <label for="input">Change charset</label>
+        <input id="input" type="text" placeholder="Input string"><br><br>
+        <label for="select">Select charset or several charsets:</label>
+        <select multiple id="select">
+            <option value="utf-8">UTF-8</option>
+            <option value="iso">ISO-8859-1</option>
+            <option value="win">Windows-1252</option>
+        </select>
+        <input type="submit" id="submit" value="Change charset">
+        <input type="reset" id="reset" value="Clear">
+    </form>
+
+    <div id="input-string" style="display: none">
+        <label for="output-1">Input string</label>
+        <textarea id="output-1" rows="2" cols="20"></textarea>
+    </div>
+
+    <div id="utf8-string" style="display: none">
+        <label for="output-2">UTF-8</label>
+        <textarea id="output-2" rows="2" cols="20"></textarea>
+    </div>
+
+    <div id="iso-string" style="display: none">
+        <label for="output-3">ISO-8859-1</label>
+        <textarea id="output-3" rows="2" cols="20"></textarea>
+    </div>
+
+    <div id="windows-string" style="display: none">
+        <label for="output-4">Windows-1252</label>
+        <textarea id="output-4" rows="2" cols="20"></textarea>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+h1 {
+    margin: 25px;
+}
+
+div {
+    width: calc(100% - 224px);
+    position: relative;
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 55px;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 50px);
+    height: 100%;
+
+    border-top-color: #4c4c4c;
+    border-top-width: 1px;
+    border-top-style: solid;
+
+    border-bottom-color: #4c4c4c;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+    left: -25px;
+    top: -1px;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    height: calc(100% + 50px);
+    width: 100%;
+
+    border-right-color: #818181;
+    border-right-width: 1px;
+    border-right-style: solid;
+
+    border-left-color: #818181;
+    border-left-width: 1px;
+    border-left-style: solid;
+
+    left: -1px;
+    top: -25px;
+}

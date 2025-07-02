@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    height: 2em;
+}
+
+button {
+    color: green;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: grey;
+}
+
+input {
+    border: 2px solid #4444e3;
+    border-radius: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    color: green;
+}
+
+input:focus {
+    outline: none;
+    color: green;
+}
+
+input:hover {
+    color: red;
+}

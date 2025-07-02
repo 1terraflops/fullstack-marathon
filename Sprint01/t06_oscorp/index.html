@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shop the latest trends in StepUP. Find stylish sneakers, boots, and casual shoes for every occasion. Step up your style today!">
+    <title>StepUP | High quality shoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav role="navigation" class="h-feed">
+        <h2>StepUP</h2>
+        <div class="navbar-buttons">
+            <p>About</p>
+            <p>Service</p>
+            <p>Contact</p>
+            <input type="text" placeholder="Search">
+        </div>
+        <p class="tel">Phone: +5551234567</p>
+    </nav>
+    <nav role="navigation" class="h-breadcrumb">
+        <h3><span class="home-outline">Home</span> / Catalog</h3>
+    </nav>
+    <main role="main" class="h-products">
+        <h2>Catalog</h2>
+        <section class="filters-checkboxes" role="search">
+            <input type="checkbox" id="weapon" name="checkbox" checked>
+            <label for="weapon"></label>
+            <input type="checkbox" id="alien" name="checkbox" checked>
+            <label for="alien"></label>
+            <input type="checkbox" id="green" name="checkbox" checked>
+            <label for="green"></label>
+        </section>
+        <section class="catalog">
+            <div class="filters">
+                <div class="checkboxes">
+                    <label for="unlikely">Size</label><br><br>
+                    <input type="checkbox" id="unlikely" name="checkbox" checked>
+                    <label for="unlikely">36-38</label><br>
+                    <input type="checkbox" id="mild" name="checkbox">
+                    <label for="mild">38-40</label><br>
+                    <input type="checkbox" id="moderate" name="checkbox">
+                    <label for="moderate">40-42</label><br>
+                    <input type="checkbox" id="likely" name="checkbox">
+                    <label for="likely">42-44</label><br>
+                    <input type="checkbox" id="certain" name="checkbox">
+                    <label for="certain">44+</label><br>
+                </div>
+                <div class="price-range">
+                    <label for="price">Price</label><br><br>
+                    <input type="range" id="price" min="0" max="250" value="70">
+                </div>
+            </div>
+            <div class="items">
+                <a href="card.html">
+                    <div class="product">
+                        <img src="assets/images/casual-1.png" alt="casual-shoes">
+                        <div class="product-info">
+                            <p class="product-heading">Casual Sneakers</p>
+                            <p class="price">$74.99</p>
+                            <p class="not-available">not in stock</p>
+                            <button class="no-buy">BUY</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="card.html">
+                    <div class="product">
+                        <img src="assets/images/casual-2.png" alt="casual-shoes">
+                        <div class="product-info">
+                            <p class="product-heading">Stylish Sneakers</p>
+                            <p class="price">$99.99</p>
+                            <p class="available">in stock</p>
+                            <button class="buy">BUY</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="card.html">
+                    <div class="product">
+                        <img src="assets/images/formal.png" alt="formal-shoes" id="formal-shoes">
+                        <div class="product-info">
+                            <p class="product-heading">Formal Boots</p>
+                            <p class="price">$119.99</p>
+                            <p class="available">in stock</p>
+                            <button class="buy">BUY</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="card.html">
+                    <div class="product">
+                        <img src="assets/images/sports.png" alt="sports-shoes">
+                        <div class="product-info">
+                            <p class="product-heading">Sports Wear</p>
+                            <p class="price">$79.99</p>
+                            <p class="not-available">not in stock</p>
+                            <button class="no-buy">BUY</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo" class="h-card">
+        <p>Copyright | StepUP | All Rights Reserved</p>
+        <p>Terms of Service | Privacy Policy</p>
+    </footer>
+</body>
+</html>

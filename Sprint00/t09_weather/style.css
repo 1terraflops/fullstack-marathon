@@ -1,0 +1,30 @@
+div {
+    margin-left: 3px;
+}
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+}
+
+#forecast div:hover {
+    box-shadow: 0 0 7px black;
+}
+
+.date {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    background-color: #4095b4;
+    color: white;
+}
+
+.temperature {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}

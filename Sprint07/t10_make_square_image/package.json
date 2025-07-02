@@ -1,0 +1,17 @@
+{
+  "name": "t10_make_square_image",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "request": "^2.88.2",
+    "sharp": "^0.34.1"
+  }
+}

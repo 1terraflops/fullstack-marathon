@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Files</title>
+</head>
+<body>
+    <fieldset>
+        <h2>Create a file</h2>
+        <form>
+            <label for="filename">Filename</label>
+            <input type="text" id="filename" name="filename"><br><br>
+            <label for="file-content">Content</label>
+            <textarea id="file-content" name="content" rows="5" cols="60"></textarea><br><br>
+            <input type="submit" value="Create file">
+        </form>
+    </fieldset>
+    <fieldset id="files-list">
+        <h2>Files:</h2>
+        <div id="files"></div>
+    </fieldset>
+    <fieldset id="selected-file" style="display: none"></fieldset>
+
+    <script src="front.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

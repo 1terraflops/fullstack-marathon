@@ -1,0 +1,143 @@
+body {
+    background-color: #e9ca4f;
+
+}
+
+h3 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    margin: 30px;
+}
+
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    color: #323232;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 20px;
+}
+
+button {
+    padding: 5px;
+}
+
+table {
+    margin: auto;
+    border-spacing: 20px;
+}
+
+#header {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+#border-example {
+    height: 60px;
+    width: 60px;
+    background-color: #bcbcbc;
+    border-bottom: 3px solid #ff0000;
+}
+
+.tile-heading {
+    font-weight: bold;
+    font-size: 17px;
+    color: #3e3e3e;
+}
+
+.syntax-example {
+    font-size: 12px;
+    color: #5c5c5c;
+}
+
+.css-syntax-example {
+    font-size: 17px;
+}
+
+.result {
+    font-family: Verdana, sans-serif;
+    color: #323232;
+}
+
+.input-labels {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color: #3a3a3a;
+}
+
+#background {
+    background-color: red;
+    height: 80px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+#opacity-1 {
+    height: 20px;
+    width: 40px;
+    background: green;
+}
+
+#opacity-2 {
+    height: 20px;
+    width: 40px;
+    background: green;
+    opacity: 0.75;
+}
+
+#opacity-3 {
+    height: 20px;
+    width: 40px;
+    background: green;
+    opacity: 0.5;
+}
+
+#opacity-4 {
+    height: 20px;
+    width: 40px;
+    background: green;
+    opacity: 0.25;
+}
+
+.tile {
+    background-color: #e2e2e2;
+    padding: 15px;
+}
+
+.css-tile {
+    background-color: #e2e2e2;
+}
+
+.html-css-content {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 50px;
+    justify-content: center;
+}
+
+.protocols-content {
+    display: grid;
+    grid-template-columns: repeat(2, 535px);
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .html-css-content { grid-template-columns: 384px 384px; }
+    .protocols-content { grid-template-columns: 818px; }
+    .result { margin-bottom: 50px; }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .html-css-content { grid-template-columns: 384px; }
+    .protocols-content { grid-template-columns: 384px; }
+}
+
+@media only screen and (max-width: 320px) {
+    .html-css-content { grid-template-columns: 100%; }
+    .protocols-content { grid-template-columns: 100%; }
+}

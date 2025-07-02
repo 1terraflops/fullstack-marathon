@@ -1,0 +1,16 @@
+{
+  "name": "t04_data_to_xml",
+  "version": "1.0.0",
+  "main": "AvengerQuote.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "fast-xml-parser": "^5.2.2"
+  }
+}

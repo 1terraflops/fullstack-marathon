@@ -1,0 +1,20 @@
+#gauntlet {
+    width: 200px;
+}
+
+#gauntlet:hover ~ #container div:nth-child(even) img:nth-child(even),
+#gauntlet:hover ~ #container div:nth-child(odd) img:nth-child(odd)
+{
+    visibility: hidden;
+}
+
+img {
+    width: 100px;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    row-gap: 10px;
+}

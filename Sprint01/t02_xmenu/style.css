@@ -1,0 +1,99 @@
+body {
+    background-color: #1f2023;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    background-color: #131317;
+    padding: 10px;
+}
+
+.challenges, .profile {
+    font-family: Verdana, sans-serif;
+    background-color: #5d49d1;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #5d49d1;
+    visibility: hidden;
+    width: 120px;
+    top: 100%;
+    left: -12px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+.profile .dropdown {
+    left: -30px;
+}
+
+.challenges:hover .dropdown,
+.profile:hover .dropdown
+{
+    visibility: visible;
+}
+
+.challenges:hover,
+.profile:hover
+{
+    background-color: rgb(76, 60, 169);
+}
+
+.dropdown div {
+    padding: 5px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.dropdown div:hover {
+    background-color: #4533a8;
+}
+
+.sprints div,
+.races div,
+.my-page div,
+.settings div
+{
+    display: none;
+}
+
+.sprints:hover div,
+.races:hover div,
+.my-page:hover div,
+.settings:hover div
+{
+    display: block;
+}
+
+.sprints:hover p,
+.races:hover p,
+.my-page:hover p,
+.settings:hover p
+{
+    margin-bottom: 10px;
+}
+
+.sprints div:hover,
+.races div:hover,
+.my-page div:hover,
+.settings div:hover
+{
+    background-color: #342593;
+}

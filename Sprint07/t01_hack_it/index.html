@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hack It</title>
+</head>
+<body>
+    <h1>Password</h1>
+    <p></p>
+    <p id="label">Password not saved at session</p>
+
+    <form>
+        <label for="password">Password for saving to session</label>
+        <input type="password" id="password" name="password" placeholder="Password to session"><br>
+
+        <label for="salt">Salt for saving to session</label>
+        <input id="salt" name="salt" placeholder="Salt to session"><br>
+
+        <input type="submit" value="Save">
+    </form>
+
+    <div>
+        <p id="hash"></p><br>
+        <label for="guess" style="display: none">Try to guess</label>
+        <input type="password" id="guess" name="guess" style="display: none" placeholder="Password to session">
+        <button type="submit" style="display: none">Check password</button><br>
+        <button id="clear" style="display: none">Clear</button>
+    </div>
+
+<script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

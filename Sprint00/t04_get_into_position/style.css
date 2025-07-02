@@ -1,0 +1,13 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #ec3223;
+}
+
+span {
+    font-size: 4em;
+    position: relative;
+    top: 30px;
+}

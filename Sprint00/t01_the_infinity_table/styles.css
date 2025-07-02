@@ -1,0 +1,45 @@
+img {
+    height: 120px;
+    width: 120px;
+    border-radius: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tbody td, tfoot td {
+    padding: 10px;
+    border: 2px solid lightgray;
+}
+
+thead {
+    background-color: #000000;
+    text-decoration-color: white;
+    color: white;
+}
+
+#orange {
+    background-color: #d6923d;
+}
+
+#green {
+    background-color: #008001;
+}
+
+#yellow {
+    background-color: #ffff05;
+}
+
+#blue {
+    background-color: #015792;
+}
+
+#purple {
+    background-color: #8175b7;
+}
+
+#red {
+    background-color: #c12a2f;
+}
